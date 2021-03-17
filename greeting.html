@@ -4,7 +4,7 @@
     <style>
 #lbl {
     font-family: monospace;
-    font-size: x-small;
+    font-size: medium;
     color: #525452;
     padding: 2px;
     border: none;
@@ -15,7 +15,7 @@
 
 }
 #date{
-    font-size:xx-small;
+    font-size: small;
 }
 body{
     background-color: #D3E7E3;
@@ -39,8 +39,9 @@ body{
     
     var today = new Date();
     var hrs = today.getHours();
+    var mins = today.getMinutes();
     var dayOfWeek = weekday[today.getDay()];
-    var date = hrs + " " + dayOfWeek + " " + (today.getMonth()+1) + '/' + today.getDate() + '/' + today.getFullYear();
+    var date = hrs + ":" + minutes + " " + dayOfWeek + " " + (today.getMonth()+1) + '/' + today.getDate() + '/' + today.getFullYear();
 
     var greet;
 
